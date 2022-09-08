@@ -30,16 +30,16 @@
                             <td scope="row"><?php echo $ci . "\n";  ?></td>
                             <td><a href="ver.php?num= <?php echo $i ?>&ci=<?php echo $ci ?>"><button type="button" class="btn btn-primary">Ver</button></a></td>
                             <td><!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $i ?>">
                                 Modal <?php echo $i ?>
                             </button>
                             
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal<?php echo $i ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog        ">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Numero <?php echo $i ?> </h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Numero <?php echo $i ?></h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
